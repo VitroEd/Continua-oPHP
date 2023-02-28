@@ -1,0 +1,34 @@
+para abrir uma tag php se usa <?php ?>.
+para usar variveis precisa usar $.
+
+criando uma pasta "views/blades" e dentro da pasta blades dois arquivos ( header.php, footer.php )
+é possivel diminuir o tamanho do codigo, passando a parte html para a header e usando o comando
+
+        include("views/blades/header.php") 
+
+trazer a header sem precisar reescreve-la.
+
+a pasta "controllers" pode ser para guardar as funções.
+
+models -> banco de dados
+controllers -> algoritmo
+views -> front end
+
+include serve pra puxar o codigo 
+
+-----------------------------------------------
+
+$servidor = "127.0.0.1";
+$usuario = "root";
+$senha = "";
+$banco = "escola";
+
+podem variar.
+
+serve para corrigir os caracteres
+mysqli_set_charset($conexao, "UTF8");
+
+concatenar no php é . ( não + )
+
+para selecionar uma pessoa específica
+SELECT * FROM alunos WHERE codigo = 4
